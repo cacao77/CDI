@@ -1,0 +1,24 @@
+{
+  "configuration": {
+    "status": "info",
+    "name": "CdiLog",
+
+    "appenders": {
+      "Console": {
+        "name": "console",
+        "PatternLayout": {
+          "pattern": "%m%n"
+        }
+      }
+    },
+
+    "loggers": {
+      "root": {
+        "level": "debug",
+        "AppenderRef": {
+          "ref": "console"
+        }
+      }
+    }
+  }
+}
